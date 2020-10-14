@@ -5,6 +5,204 @@
           box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  color: #fff;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 2rem/1 "Nunito", sans-serif;
+}
+
+.location, h1, .visit p {
+  height: 16vh;
+}
+
+#page-landing {
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  text-align: center;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page-landing #container {
+  margin: auto;
+  width: calc(min(90%, 112rem));
+}
+
+#page-landing #container main .visit a {
+  width: 8rem;
+  height: 8rem;
+  background: #ffd666;
+  border: none;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  -webkit-transition: background-color 200s;
+  transition: background-color 200s;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+#page-landing #container main .visit a:hover {
+  background: #fff;
+}
+
+#page-landing #container main .visit a #logo {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+#page-landing #container main .visit a .location {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+#page-landing #container main .visit a main h1 {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+/* ANIMATIONS */
+@media (min-width: 760px) {
+  #container {
+    padding: 5rem 2rem;
+    background: url("../images/bg.svg") no-repeat 80%/clamp(30rem, 44vw, 56rem);
+  }
+  #container header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #container .location,
+  #container h1,
+  #container .visit p {
+    height: initial;
+    text-align: initial;
+  }
+  #container .location {
+    text-align: right;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+  #container main h1 {
+    font-weight: bold;
+    width: calc(min(300px, 80%));
+    line-height: .88;
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+    font-size: clamp(4rem, 8vw, 8.4rem);
+  }
+  #container .visit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #container .visit a {
+    margin: initial !important;
+  }
+  #container .visit p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+}
+
+#page-orphanages {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page-orphanages aside {
+  width: clamp(24rem, 25vw, 44rem);
+  background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+  padding: clamp(3rem, 5vw, 8rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page-orphanages aside h2 {
+  margin-top: 6.4rem;
+  font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 "Nunito", sans-serif;
+}
+
+#page-orphanages aside p {
+  margin-top: 2.4rem;
+  font: 1.6rem/1.5 'Nunito', sans-serif;
+}
+
+#page-orphanages aside footer p {
+  margin-top: .8rem;
+}
+
+#page-orphanages .create-orphanage {
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  background: #15c3d6;
+  border: 0;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 200s;
+  transition: background-color 200s;
+}
+
+#page-orphanages .create-orphanage:hover {
+  background: #17d6eb;
+}
+
 @-webkit-keyframes up {
   from {
     opacity: 0;
@@ -27,6 +225,28 @@
   }
 }
 
+@-webkit-keyframes right {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes right {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .animate-up {
   -webkit-animation-name: up;
           animation-name: up;
@@ -36,139 +256,10 @@
           animation-fill-mode: backwards;
 }
 
-body,
-input,
-button,
-textarea {
-  font: 400 2rem/1 "Nunito", sans-serif;
-}
-
-#page-landing {
-  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
-  text-align: center;
-  min-height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#container {
-  margin: auto;
-  width: calc(min(90%, 112rem));
-}
-
-.location,
-h1,
-.visit p {
-  height: 16vh;
-}
-
-.visit a {
-  width: 8rem;
-  height: 8rem;
-  background: #ffd666;
-  border: none;
-  border-radius: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  -webkit-transition: background 200s;
-  transition: background 200s;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.visit a :hover {
-  background: #96feff;
-}
-
-/* ANIMATIONS */
-#logo {
-  -webkit-animation-delay: 50ms;
-          animation-delay: 50ms;
-}
-
-.location {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-main h1 {
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
-  font-size: clamp(4rem, 8vw, 8.4rem);
-}
-
-@media (min-width: 760px) {
-  #container {
-    padding: 5rem 2rem;
-    background: url("../images/bg.svg") no-repeat 80%/clamp(30rem, 54vw, 56rem);
-  }
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .location,
-  h1,
-  .visit p {
-    height: initial;
-    text-align: initial;
-  }
-  .location {
-    text-align: right;
-    font-size: 2.4rem;
-    line-height: 1.5;
-  }
-  main h1 {
-    font-weight: bold;
-    width: calc(min(300px, 80%));
-    line-height: .88;
-    margin: clamp(10%, 9vh, 12%) 0 4rem;
-  }
-  .visit {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .visit a {
-    margin: initial;
-  }
-  .visit p {
-    font-size: 2.4rem;
-    line-height: 1.5;
-    width: clamp(20rem, 20vw, 30rem);
-  }
-}
-
-:root {
-  font-size: 62.5%;
-}
-
-body {
-  height: 100vh;
-  color: #fff;
+.animate-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /*# sourceMappingURL=main.css.map */

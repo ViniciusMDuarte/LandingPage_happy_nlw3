@@ -1,17 +1,15 @@
 
 @import './normalize';
-@import './animations';
+@import './base';
 @import './page-landing';
 @import './responsive';
+@import './page-orphanages';
+@import './animations';
 
 
 
-:root {
-  font-size: 62.5%;
-}
 
-body {
-  height: 100vh;
-  color: #fff;
-}
+
+
+
 

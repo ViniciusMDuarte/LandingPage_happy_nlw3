@@ -6,62 +6,84 @@ textarea {
   font: 400 2rem/1 "Nunito", sans-serif;
 }
 
+.location, h1, .visit p {
+  height: 16vh;
+}
+
 #page-landing {
   background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
   text-align: center;
   min-height: 100vh;
-
   align-items: center;
-
   display: flex;
-}
 
-#container {
-  margin: auto;
-  width: calc(min(90%, 112rem));
-}
-
-.location,
-h1,
-.visit p {
-  height: 16vh;
-}
-
-.visit a {
-    width: 8rem;
-    height: 8rem;
-    background: #ffd666;
-    border: none;
-    border-radius: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #container {
     margin: auto;
-    transition: background 200s;
-    animation-delay: 200ms;
+    width: calc(min(90%, 112rem));
 
-    :hover {
-      background: #96feff;
+    main {
+
+      .visit a {
+        width: 8rem;
+        height: 8rem;
+        background: #ffd666;
+        border: none;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        transition: background-color 200s;
+        animation-delay: 200ms;
+    
+        &:hover {
+          background: #fff;
+    
+          // background: #96feff;
+        }
+
+        #logo {
+          animation-delay: 50ms;
+        }
+        
+        .location {
+          animation-delay: 100ms;
+        }
+        
+        main h1 {
+          animation-delay: 150ms;
+       
+      
+        }
+
+
+
+
     }
+    
+  
+    }
+  }
+
+  
+
+
+
+
 
 }
+
+
+
+
+
+
+
 
 
 /* ANIMATIONS */
 
-#logo {
-    animation-delay: 50ms;
-  }
-  
-  .location {
-    animation-delay: 100ms;
-  }
-  
-  main h1 {
-    animation-delay: 150ms;
-    font-size: clamp(4rem, 8vw, 8.4rem);
 
-  }
 
   
 
