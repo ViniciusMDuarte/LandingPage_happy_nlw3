@@ -26,4 +26,4 @@ const popup = L.popup({
 L
 .marker([-22.9137531,-43.5860654], { icon })
 .addTo(mymap)
-.bindPopup(popup);
+.bindPopup(popup)
