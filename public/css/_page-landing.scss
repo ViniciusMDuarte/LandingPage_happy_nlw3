@@ -1,5 +1,6 @@
-
-.location, main h1, .visit p {
+.location,
+main > h1,
+.visit > p {
   height: 16vh;
 }
 
@@ -15,7 +16,6 @@
     width: calc(min(90%, 112rem));
 
     main {
-
       .visit a {
         width: 8rem;
         height: 8rem;
@@ -28,56 +28,26 @@
         margin: auto;
         transition: background-color 200s;
         animation-delay: 200ms;
-    
+
         &:hover {
           background: #fff;
-    
+
           // background: #96feff;
         }
 
         #logo {
           animation-delay: 50ms;
         }
-        
+
         .location {
           animation-delay: 100ms;
         }
-        
+
         main h1 {
           animation-delay: 150ms;
-       
-      
         }
-
-
-
-
-    }
-    
-  
+      }
     }
   }
-
-  
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-/* ANIMATIONS */
-
-
-
-  
-
 

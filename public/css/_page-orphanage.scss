@@ -3,37 +3,6 @@
   display: flex;
   min-height: 100vh;
 
-  aside.sidebar {
-    position: fixed;
-    height: 100%;
-    padding: 3.2rem 2.4rem;
-    background: #15c3d6;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    footer button {
-      width: 4.8rem;
-      height: 4.8rem;
-      border: none;
-      background: #12afcb;
-      border-radius: 1.6rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 200s;
-      &:hover {
-        background: #17d6eb;
-      }
-    }
-  }
-  .with-sidebar {
-    padding-left: 11rem;
-  }
-
 main {
     flex: 1;
 }
@@ -105,29 +74,7 @@ main {
         color: #4d6f80;
       }
     }
-    .map-container {
-      margin-top: 6.4rem;
-      background: #e6f7fb;
-      border: 1px solid #d3eae2;
-      border-radius: 2rem;
-      footer {
-        padding: 2rem 0;
-        text-align: center;
-        a {
-          color: #0089a5;
-          text-decoration: none;
-        }
-      }
-      .leaflet-container {
-        border-bottom: 1px solid #dde3f0;
-        border-radius: 2rem;
-      }
-    }
 
-    #mapid {
-      width: 100%;
-      height: 28rem;
-    }
   }
   .open-details {
     margin-top: 2.4rem;
@@ -154,26 +101,6 @@ main {
       color: #37c77f;
     }
 
-  }
-  .primary-button {
-    margin-top: 6.4rem;
-    width:100%;
-    height: 6.4rem;
-    border: none;
-    cursor: pointer;
-    background: #3cdc8c;
-    border-radius: 2rem;
-    color: #fff;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 200s;
-    &:hover {
-        background-color: #36cf82;
-    }
-    img {
-        margin-right: 1.6rem;
-    }
   }
   
 }

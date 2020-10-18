@@ -23,8 +23,53 @@
             font: 1.6rem/1.5 'Nunito', sans-serif;
         }
 
-        footer p {
+    footer {
+
+        p {
             margin-top: .8rem;
+            
+        }
+        
+        button {
+            width: 4.8rem;
+            height: 4.8rem;
+            border: none;
+            background: #12afcb;
+            border-radius: 1.6rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 200s;
+            margin-top: 2.8rem;
+            &:hover {
+                background: #17d6eb;
+            }
+           
+        }
+        
+    }
+    
+    
+    }
+
+    button {
+        width: 4.8rem;
+        height: 4.8rem;
+        border: none;
+        background: #12afcb;
+        border-radius: 1.6rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 200s;
+        &:hover {
+            background: #17d6eb;
+        }
+        p {
+            margin-top: .8rem;
+            
         }
     }
 
