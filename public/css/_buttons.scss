@@ -10,7 +10,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 200s;
+    transition: background-color 200ms;
     &:hover {
         background-color: #36cf82;
     }

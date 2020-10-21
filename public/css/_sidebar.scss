@@ -19,7 +19,7 @@ aside.sidebar {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 200s;
+      transition: background-color 200ms;
       &:hover {
         background: #17d6eb;
       }

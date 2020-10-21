@@ -95,5 +95,8 @@ form {
       padding: .6rem;
       cursor: pointer;
     }
+    & + .new-upload {
+      margin-top: 2.4rem;
+    }
   }
 }
